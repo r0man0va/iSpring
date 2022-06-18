@@ -1,4 +1,4 @@
-class Document {
+class CDocument {
     protected header() {
         console.log('Document header')
     }
@@ -16,17 +16,17 @@ class Document {
     }
 }
 
-class PdfDocument extends Document {
+class PdfDocument extends CDocument {
     protected body() {
         console.log('PdfDocument body')
     }
 }
 
-class HtmlDocument extends Document{
+class HtmlDocument extends CDocument{
     protected body() {
         console.log('HtmlDocument body')
     }
 }
 
-const docs: Document[] = [new Document(), new PdfDocument(), new HtmlDocument()]
+const docs: CDocument[] = [new CDocument(), new PdfDocument(), new HtmlDocument()]
 docs.forEach(doc => doc.show())
