@@ -5,8 +5,8 @@
 //page.open()
 
 class Page {
-    pUrl: string
-    pName: string
+    protected pUrl: string
+    protected pName: string
 
     constructor(pName: string, pUrl: string)
     {

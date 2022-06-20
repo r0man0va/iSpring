@@ -4,7 +4,6 @@
 import {Page} from './04'
 
 class SearchEnginePage extends Page {
-    text: string
 
     constructor(name: string, url?: string)
     {
